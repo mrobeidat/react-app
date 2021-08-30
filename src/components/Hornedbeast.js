@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hornedbeast.css';
+// import './Hornedbeast.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
@@ -24,13 +24,13 @@ render(){
   
 <>
 
-<Card style={{ width: '18rem', marginLeft:"40%" , }}>
+<Card style={{ width: '18rem', display:"inline-block", margin:"30px" }}>
   <Card.Img variant="top" src= {this.props.imgUrl} onClick ={this.incrementOfClicks} />
   <Card.Body>
     <Card.Title>{this.props.title}</Card.Title>
     <Card.Text>
 <p>Number of clicks 😸: {this.state.NumberOfClicks}</p>
-<p>{this.props.discription}</p>
+<p>{this.props.description}</p>
     </Card.Text>
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>
