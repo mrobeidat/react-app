@@ -5,7 +5,7 @@ class Footer extends React.Component{
 render(){
   return(
 <>
-&copy;All rights reserved
+&copy;Yousef Obeidat
  </>
   );
 }
