@@ -18,19 +18,19 @@ incrementOfClicks=()=>{
   ({NumberOfClicks :this.state.NumberOfClicks +1})
 }
 
-
 render(){
   return(
   
 <>
 
-<Card style={{ width: '18rem', display:"inline-block", margin:"30px" }}>
+<Card style={{ width: '18rem', display:"inline-block", margin:"30px"}}>
   <Card.Img variant="top" src= {this.props.imgUrl} onClick ={this.incrementOfClicks} />
   <Card.Body>
     <Card.Title>{this.props.title}</Card.Title>
     <Card.Text>
 <p>Number of clicks 😸: {this.state.NumberOfClicks}</p>
 <p>{this.props.description}</p>
+<p>{this.props.keyword}</p>
     </Card.Text>
     <Button variant="primary">Go somewhere</Button>
   </Card.Body>

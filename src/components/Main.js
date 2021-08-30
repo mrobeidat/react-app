@@ -14,6 +14,7 @@ return(
 title= {item.title} 
 imgUrl={item.image_url}
 description={item.description}
+keyword={item.keyword}
 />
   )
 })
