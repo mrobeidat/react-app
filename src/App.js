@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Hornedbeast from './components/Hornedbeast';
+import Main from './components/Main';
 
 
 class App extends React.Component{
@@ -11,9 +11,8 @@ render(){
 
 <>
 <Header/>
-<Hornedbeast/>
+<Main/>
 <Footer/>
-
 </>
 
   );
