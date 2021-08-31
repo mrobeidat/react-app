@@ -1,5 +1,4 @@
 import React from 'react';
-// import './Hornedbeast.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button'
@@ -32,7 +31,7 @@ render(){
 <p>{this.props.description}</p>
 <p>{this.props.keyword}</p>
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Button variant="primary" onClick={this.incrementOfClicks}>click to view</Button>
   </Card.Body>
 </Card>
 </>
