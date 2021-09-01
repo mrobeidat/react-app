@@ -11,9 +11,9 @@ class Main extends React.Component {
                     {this.props.dataFile.map((item) => {
                         return (
                             <HornedBeastParent
-                                titleM={item.title}
-                                imageUrlM={item.image_url}
-                                descriptionM={item.description}
+                                title={item.title}
+                                imageUrl={item.image_url}
+                                description={item.description}
                                 handleShow={this.props.handleShow}
                                 updateSelectedData={this.props.updateSelectedData}
                             />

@@ -25,25 +25,22 @@ handleClose=()=>{
     show:false
   })
 }
-updateSelectedData=(titleM,imageUrlM,descriptionM)=>{
+updateSelectedData=(title,imageUrl,description)=>{
   this.setState({
-    title:titleM,
-    image_url:imageUrlM,
-    description:descriptionM
+    title:title,
+    image_url:imageUrl,
+    description:description
   })
 }
   render() {
     return (
       <>
-      {/* <SelectBeast/> */}
         <Header />
                 <Main
                 dataFile={dataFile}
                 handleShow={this.handleShow}
                 updateSelectedData={this.updateSelectedData}
-                  // title={item.title}
-                  // imageUrl={item.image_url}
-                  // description={item.description}
+                 
                 />
                 <SelectBeast
                 show={this.state.show}
